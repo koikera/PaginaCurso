@@ -1,0 +1,204 @@
+<div class="d-flex flex-column container mt-5 w-50 text-center">
+    <h5 class="text-light">Crie soluções inovadoras, desfrute de flexibilidade profissional e desafie-se constantemente. Com salários competitivos e benefícios atrativos</h5>
+    <div class="d-flex mt-5">
+        <div class="d-flex flex-column w-50">
+            <p class="text-secondary text-start">Prepare-se:</p>
+            <ul class="text-primary text-start">
+                <li>Familarizar-se com os conceitos básicos de computação, incluindo sistemas operacionais, navegadores da web e gerenciamento de arquivos</li>
+                <li>Aprender os fundamentos de HTML (Hypertext Markup Language) e CSS (Cascading Style Sheets) para criação e estilização de páginas da web.</li>
+                <li>Estudar JavaScript para adicionar interatividade e dinamismo às páginas da web. Entenda conceitos como variáveis, funções, eventos e manipulação do DOM (Document Object Model).</li>
+                <li>Aprender sobre design responsivo para garantir que suas aplicações sejam acessíveis e utilizáveis em diferentes dispositivos e tamanhos de tela.</li>
+                <li>Familiarizar-se com o Git e GitHub para controle de versão de código. Entenda como criar repositórios, fazer commits, criar branches e colaborar em projetos de equipe.</li>
+                <li>Criar alguns projetos pequenos. Isso ajuda a aplicar o conhecimento teórico e a desenvolver suas habilidades práticas de resolução de problemas.</li>
+            </ul>
+        </div>
+        <div class="vertical-line mx-5"></div>
+        <h5 class="text-start text-primary w-50">Com a constante evolução do setor, é imprescindível cultivar habilidades de adaptação e rapidez no aprendizado. Dominar uma variedade de opções e ferramentas é fundamental para a flexibilidade e eficácia dos projetos de engenharia contemporâneos</h5>
+    </div>
+    <div class="mt-5 d-flex flex-column">
+        <h5 class="text-secondary">COMPETÊNCIAS & HABILIDADES</h5>
+        <div class="d-flex flex-wrap justify-content-center">
+            <h6 class="p-3 bg-dark text-primary m-2 w-25"  *ngFor="let item of listaCompetencias">{{item.nome}}</h6>
+        </div>
+    </div>
+    <div class="mt-5 d-flex flex-column">
+        <h5 class="text-secondary">FRAMEWORKS & FERRAMENTAS</h5>
+        <div class="d-flex flex-wrap justify-content-center">
+            <h6 class="p-3 bg-dark text-primary m-2 w-25"  *ngFor="let item of listaFerramentas">{{item.nome}}</h6>
+        </div>
+    </div>
+    <div class="mt-5">
+        <div class="d-flex align-items-center">
+            <hr class="text-light me-1" style="width: 7%; border: 1px solid white;">
+            <h5 class="text-light text-start m-0">Conteúdo do curso</h5>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item mb-3 bg-dark">
+              <h2 class="accordion-header d-flex justify-content-between">
+                <button class="accordion-button text-secondary bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Módulo 1 - Apresentação do Curso
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body text-primary text-start">
+                    <ul>
+                        <li>Boas-vindas</li>
+                        <li>Introdução ao curso</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item mb-3 bg-dark">
+                <h2 class="accordion-header d-flex justify-content-between">
+                  <button class="accordion-button text-secondary bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Módulo 2 - Princípios do Html, CSS & JavaScript + Projeto (Front-End)
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-primary text-start">
+                      <ul>
+                          <li>Boas-vindas</li>
+                          <li>Introdução ao curso</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 bg-dark">
+                <h2 class="accordion-header d-flex justify-content-between">
+                  <button class="accordion-button text-secondary bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Módulo 3 - Princípios do .NET + Projeto (Back-End)
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-primary text-start">
+                      <ul>
+                          <li>Boas-vindas</li>
+                          <li>Introdução ao curso</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 bg-dark">
+                <h2 class="accordion-header d-flex justify-content-between">
+                  <button class="accordion-button text-secondary bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    Módulo 4 - Projeto E-Commerce (Front-End)
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-primary text-start">
+                      <ul>
+                          <li>Boas-vindas</li>
+                          <li>Introdução ao curso</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 bg-dark">
+                <h2 class="accordion-header d-flex justify-content-between">
+                  <button class="accordion-button text-secondary bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    Módulo 5 - Metodologia Ágil Scrum
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-primary text-start">
+                      <ul>
+                          <li>Boas-vindas</li>
+                          <li>Introdução ao curso</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 bg-dark">
+                <h2 class="accordion-header d-flex justify-content-between">
+                  <button class="accordion-button text-secondary bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    Módulo 6 - Princípios do LowCode + Projeto
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-primary text-start">
+                      <ul>
+                          <li>Boas-vindas</li>
+                          <li>Introdução ao curso</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 bg-dark">
+                <h2 class="accordion-header d-flex justify-content-between">
+                  <button class="accordion-button text-secondary bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                    Módulo 7 - Oficina do Linkedin
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-primary text-start">
+                      <ul>
+                          <li>Boas-vindas</li>
+                          <li>Introdução ao curso</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item mb-3 bg-dark">
+                <h2 class="accordion-header d-flex justify-content-between">
+                  <button class="accordion-button text-secondary bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                    Módulo 8 - Finalização & Networking
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-primary text-start">
+                      <ul>
+                          <li>Boas-vindas</li>
+                          <li>Introdução ao curso</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+    </div>
+    <div class="mt-5 d-flex flex-column">
+        <div class="d-flex">
+            <hr class="w-50 text-light me-1" style="width: 7%; border: 1px solid white;">
+            <h5 class="text-secondary w-25">Sobre mim</h5>
+            <hr class="w-50 text-light ms-1" style="width: 7%; border: 1px solid white;">
+        </div>
+        <p class="text-start text-primary">Meu nome é Matheus, tenho 22 anos, e sou um desenvolvedor FullStack Pleno. Completei minha pós-graduação em Engenharia de Software na FIAP. Sempre tive o desejo de compartilhar meu conhecimento e ajudar aqueles que desejam ingressar na área de programação. Ao longo do tempo, desenvolvi um forte senso de colaboração, especialmente ao ajudar amigos próximos, que sempre saíram satisfeitos com o suporte que ofereci.
+            Meu objetivo é desmistificar algumas concepções equivocadas sobre a rápida ascensão a programador sênior em apenas 3 meses. Pretendo oferecer uma visão realista sobre salários na indústria e também compartilhar informações sobre o ambiente corporativo dentro do setor de tecnologia.
+            </p>
+    </div>
+    <div class="mt-5 d-flex flex-column">
+        <div class="d-flex">
+            <hr class="w-50 text-light me-1" style="width: 7%; border: 1px solid white;">
+            <h5 class="text-secondary w-25">Inscreva-se</h5>
+            <hr class="w-50 text-light ms-1" style="width: 7%; border: 1px solid white;">
+        </div>
+        <div class="d-flex">
+                <img src="assets/Lapis.png" style="mix-blend-mode: multiply; width: 300px;" alt="">
+                <div class="d-flex flex-column justify-content-center">
+                    <p class="text-start text-primary">Agora que você chegou até aqui e demonstrou interesse no curso, que tal se juntar à minha equipe de alunos e explorarmos juntos esse fascinante mundo da programação? Será uma jornada de aprendizado e descobertas que compartilharemos com entusiasmo.</p>
+                    <div class="d-flex align-items-center">
+                        <h5 class="text-light text-start me-5">
+                            De <strong class="text-danger position-relative" style="text-decoration-line: line-through;">R$199,99</strong>
+                            por <strong class="text-success">R$99,99</strong>
+                          </h5>
+                        <button class="btn btn-primary btn-lg text-dark rounded-0" style="font-size: 14px;">INSCREVA-SE</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="mt-5 d-flex flex-column">
+        <div class="d-flex">
+            <hr class="w-50 text-light me-1" style="width: 7%; border: 1px solid white;">
+            <h5 class="text-secondary w-25">Reflita</h5>
+            <hr class="w-50 text-light ms-1" style="width: 7%; border: 1px solid white;">
+        </div>
+        <p class="text-primary">"Reflexão é o primeiro passo para mudança. Avalie suas habilidades, paixões e metas. A mudança começa dentro de você."</p>
+    </div>
+</div>

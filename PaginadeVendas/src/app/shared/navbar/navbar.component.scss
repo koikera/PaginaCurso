@@ -1,0 +1,11 @@
+.background{
+    padding-top: 50px; /* Ajuste conforme necessário para diminuir a altura na parte superior */
+    padding-bottom: 50px;
+    height: 609px;
+    background: url("../../../assets/fundo.png") no-repeat top fixed;
+    background-size: cover;
+}
+
+button:hover{
+    box-shadow: 0px 0px 10px #3d91ab;;
+}
