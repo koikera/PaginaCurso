@@ -1,7 +1,7 @@
-<div class="d-flex flex-column container mt-5 w-50 text-center">
+<div class="media d-flex flex-column container mt-5 text-center">
     <h5 class="text-light">Crie soluções inovadoras, desfrute de flexibilidade profissional e desafie-se constantemente. Com salários competitivos e benefícios atrativos</h5>
-    <div class="d-flex mt-5">
-        <div class="d-flex flex-column w-50">
+    <div class="media d-flex mt-5">
+        <div class="listaPrepare image-background d-flex flex-column w-50" id="listaPrepare">
             <p class="text-secondary text-start">Prepare-se:</p>
             <ul class="text-primary text-start">
                 <li>Familarizar-se com os conceitos básicos de computação, incluindo sistemas operacionais, navegadores da web e gerenciamento de arquivos</li>
@@ -13,21 +13,25 @@
             </ul>
         </div>
         <div class="vertical-line mx-5"></div>
-        <h5 class="text-start text-primary w-50">Com a constante evolução do setor, é imprescindível cultivar habilidades de adaptação e rapidez no aprendizado. Dominar uma variedade de opções e ferramentas é fundamental para a flexibilidade e eficácia dos projetos de engenharia contemporâneos</h5>
+        <hr>
+        <h5 class="image-background-controle text-start text-primary w-50">Com a constante evolução do setor, é imprescindível cultivar habilidades de adaptação e rapidez no aprendizado. Dominar uma variedade de opções e ferramentas é fundamental para a flexibilidade e eficácia dos projetos de engenharia contemporâneos</h5>
     </div>
-    <div class="mt-5 d-flex flex-column">
+    <div class="image-background-code">
+      <div class="mt-5 d-flex flex-column w-100">
         <h5 class="text-secondary">COMPETÊNCIAS & HABILIDADES</h5>
         <div class="d-flex flex-wrap justify-content-center">
             <h6 class="p-3 bg-dark text-primary m-2 w-25"  *ngFor="let item of listaCompetencias">{{item.nome}}</h6>
         </div>
+      </div>
+      <div class="mt-5 d-flex flex-column w-100">
+          <h5 class="text-secondary">FRAMEWORKS & FERRAMENTAS</h5>
+          <div class="d-flex flex-wrap justify-content-center">
+              <h6 class="p-3 bg-dark text-primary m-2 w-25"  *ngFor="let item of listaFerramentas">{{item.nome}}</h6>
+          </div>
+      </div>
     </div>
-    <div class="mt-5 d-flex flex-column">
-        <h5 class="text-secondary">FRAMEWORKS & FERRAMENTAS</h5>
-        <div class="d-flex flex-wrap justify-content-center">
-            <h6 class="p-3 bg-dark text-primary m-2 w-25"  *ngFor="let item of listaFerramentas">{{item.nome}}</h6>
-        </div>
-    </div>
-    <div class="mt-5">
+    
+    <div class="mt-5 w-100">
         <div class="d-flex align-items-center">
             <hr class="text-light me-1" style="width: 7%; border: 1px solid white;">
             <h5 class="text-light text-start m-0">Conteúdo do curso</h5>
@@ -58,8 +62,11 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body text-primary text-start">
                       <ul>
-                          <li>Boas-vindas</li>
-                          <li>Introdução ao curso</li>
+                          <li>Introdução ao HTML</li>
+                          <li>Introdução ao CSS</li>
+                          <li>Introdução ao JavaScript</li>
+                          <li>Integração HTML, CSS e JavaScript</li>
+                          <li>Projeto Prático - Construção de uma Página Web Interativa</li>
                       </ul>
                   </div>
                 </div>
@@ -74,8 +81,14 @@
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body text-primary text-start">
                       <ul>
-                          <li>Boas-vindas</li>
-                          <li>Introdução ao curso</li>
+                          <li>Introdução ao .NET</li>
+                          <li>Fundamentos do C#</li>
+                          <li>Programação Orientada a Objetos em C#</li>
+                          <li>Manipulação de Dados com .NET</li>
+                          <li>Desenvolvimento de APIs RESTful com .NET</li>
+                          <li>Autenticação e Autorização em APIs .NET</li>
+                          <li>Arquitetura de projeto</li>
+                          <li>Projeto Prático - Construção de uma API RESTful</li>
                       </ul>
                   </div>
                 </div>
@@ -90,8 +103,10 @@
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body text-primary text-start">
                       <ul>
-                          <li>Boas-vindas</li>
-                          <li>Introdução ao curso</li>
+                          <li>Desenvolvimento da Página Inicial</li>
+                          <li>Desenvolvimento do Carrinho de Compras</li>
+                          <li>Desenvolvimento da Finalização da Compra</li>
+                          <li>Responsividade do projeto</li>
                       </ul>
                   </div>
                 </div>
@@ -106,8 +121,11 @@
                 <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body text-primary text-start">
                       <ul>
-                          <li>Boas-vindas</li>
-                          <li>Introdução ao curso</li>
+                          <li>Introdução à Metodologia Ágil</li>
+                          <li>Visão Geral do Scrum</li>
+                          <li>Product Backlog e Sprint Planning</li>
+                          <li>Execução da Sprint</li>
+                          <li>Revisão e Retrospectiva da Sprint</li>
                       </ul>
                   </div>
                 </div>
@@ -122,8 +140,10 @@
                 <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body text-primary text-start">
                       <ul>
-                          <li>Boas-vindas</li>
-                          <li>Introdução ao curso</li>
+                          <li>Introdução ao Low-Code</li>
+                          <li>Exploração da Plataforma Power Apps</li>
+                          <li>Integrações e Automatizações em Low-Code</li>
+                          <li>Projeto Prático - Desenvolvimento de um Aplicativo com Low-Code</li>
                       </ul>
                   </div>
                 </div>
@@ -138,8 +158,26 @@
                 <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body text-primary text-start">
                       <ul>
-                          <li>Boas-vindas</li>
-                          <li>Introdução ao curso</li>
+                          <li>O que é o Linkedin?</li>
+                          <li>Como usar o Linkedin</li>
+                          <li>Como configurar um perfil no Linkedin</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 bg-dark">
+                <h2 class="accordion-header d-flex justify-content-between">
+                  <button class="accordion-button text-secondary bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                    Módulo 8 - Git & Github
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-primary text-start">
+                      <ul>
+                          <li>Configuração do ambiente</li>
+                          <li>Comandos básicos do git</li>
+                          <li>Subir projetos no repositório</li>
                       </ul>
                   </div>
                 </div>
@@ -147,15 +185,14 @@
               
               <div class="accordion-item mb-3 bg-dark">
                 <h2 class="accordion-header d-flex justify-content-between">
-                  <button class="accordion-button text-secondary bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
-                    Módulo 8 - Finalização & Networking
+                  <button class="accordion-button text-secondary bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                    Módulo 9 - Finalização & Networking
                   </button>
                 </h2>
-                <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body text-primary text-start">
                       <ul>
-                          <li>Boas-vindas</li>
-                          <li>Introdução ao curso</li>
+                          <li>Agradecimentos</li>
                       </ul>
                   </div>
                 </div>
@@ -163,23 +200,23 @@
 
           </div>
     </div>
-    <div class="mt-5 d-flex flex-column">
-        <div class="d-flex">
+    <div class="mt-5 d-flex flex-column w-100">
+        <div class="d-flex align-items-center">
             <hr class="w-50 text-light me-1" style="width: 7%; border: 1px solid white;">
-            <h5 class="text-secondary w-25">Sobre mim</h5>
+            <h5 class="text-secondary w-25 align-items-center">Sobre mim</h5>
             <hr class="w-50 text-light ms-1" style="width: 7%; border: 1px solid white;">
         </div>
         <p class="text-start text-primary">Meu nome é Matheus, tenho 22 anos, e sou um desenvolvedor FullStack Pleno. Completei minha pós-graduação em Engenharia de Software na FIAP. Sempre tive o desejo de compartilhar meu conhecimento e ajudar aqueles que desejam ingressar na área de programação. Ao longo do tempo, desenvolvi um forte senso de colaboração, especialmente ao ajudar amigos próximos, que sempre saíram satisfeitos com o suporte que ofereci.
             Meu objetivo é desmistificar algumas concepções equivocadas sobre a rápida ascensão a programador sênior em apenas 3 meses. Pretendo oferecer uma visão realista sobre salários na indústria e também compartilhar informações sobre o ambiente corporativo dentro do setor de tecnologia.
             </p>
     </div>
-    <div class="mt-5 d-flex flex-column">
-        <div class="d-flex">
+    <div class="mt-5 d-flex flex-column w-100">
+        <div class="d-flex align-items-center">
             <hr class="w-50 text-light me-1" style="width: 7%; border: 1px solid white;">
             <h5 class="text-secondary w-25">Inscreva-se</h5>
             <hr class="w-50 text-light ms-1" style="width: 7%; border: 1px solid white;">
         </div>
-        <div class="d-flex">
+        <div class="d-flex" id="Inscrevase">
                 <img src="assets/Lapis.png" style="mix-blend-mode: multiply; width: 300px;" alt="">
                 <div class="d-flex flex-column justify-content-center">
                     <p class="text-start text-primary">Agora que você chegou até aqui e demonstrou interesse no curso, que tal se juntar à minha equipe de alunos e explorarmos juntos esse fascinante mundo da programação? Será uma jornada de aprendizado e descobertas que compartilharemos com entusiasmo.</p>
@@ -194,7 +231,7 @@
         </div>
     </div>
     <div class="mt-5 d-flex flex-column">
-        <div class="d-flex">
+        <div class="d-flex align-items-center w-100">
             <hr class="w-50 text-light me-1" style="width: 7%; border: 1px solid white;">
             <h5 class="text-secondary w-25">Reflita</h5>
             <hr class="w-50 text-light ms-1" style="width: 7%; border: 1px solid white;">

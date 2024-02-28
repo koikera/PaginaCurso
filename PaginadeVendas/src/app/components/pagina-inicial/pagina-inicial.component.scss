@@ -2,3 +2,99 @@
     border-left: 2px solid #fff; /* largura e cor da linha */
     height: 55vh; /* altura da linha */
   }
+
+  .image-background{
+    background-image: url("../../../assets/ButtonPNG.png");
+    background-size: 88%;
+    background-repeat: no-repeat; /* controla a repetição da imagem */
+    background-position: center; /* define a posição da imagem */
+  }
+
+  .image-background-controle{
+    background-image: url("../../../assets/Controle.png");
+    background-size: 88%;
+    background-repeat: no-repeat; /* controla a repetição da imagem */
+    background-position: center; /* define a posição da imagem */
+  }
+
+  .image-background-code{
+    background-image: url("../../../assets/Code.png");
+    background-size: 35%;
+    background-repeat: no-repeat; /* controla a repetição da imagem */
+    background-position: center; /* define a posição da imagem */
+  }
+
+  .accordion-item, .accordion-button{
+    background: transparent !important;
+  }
+
+
+  .accordion{
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+  .accordion-item{
+    border: 1px solid #595959;
+  }
+
+  #accordionExample{
+    background-image: url("../../../assets/Cubos.png");
+    background-size: 35%;
+    background-repeat: no-repeat; /* controla a repetição da imagem */
+    background-position: center; /* define a posição da imagem */
+  }
+
+  @media (max-width: 770px){
+    .media{
+      flex-wrap: wrap;
+      width: 100% !important;
+      text-align: center !important;
+    }
+    .image-background-controle{
+      background-image: none
+    }
+
+    #listaPrepare{
+      font-size: 3vw;
+      width: 100% !important;
+    }
+    p{
+      text-align: center !important;
+      font-size: 3vw !important;
+    }
+
+    h5, h6{
+      font-size: 3vw !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    hr{
+      width: 100%;
+      height: 2px;
+      background-color: white;
+    }
+
+    .vertical-line{
+      display: none;
+    }
+
+    #Inscrevase{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    #Inscrevase h5{
+      margin-right: 0 !important;
+      margin-bottom: 0 !important;
+      font-size: 3vw;
+    }
+    #Inscrevase img{
+      max-width: 200px;
+    }
+    #Inscrevase button{
+      width: 50% !important;
+      font-size: 2vw !important;
+    }
+  }
