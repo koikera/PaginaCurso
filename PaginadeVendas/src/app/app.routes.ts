@@ -3,5 +3,5 @@ import { PaginaInicialComponent } from './components/pagina-inicial/pagina-inici
 
 export const routes: Routes = [
     
-    {path: 'home', component: PaginaInicialComponent}
+    {path: '', component: PaginaInicialComponent}
 ];
